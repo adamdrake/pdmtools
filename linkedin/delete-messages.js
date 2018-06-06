@@ -3,7 +3,7 @@ javascript: (function () {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
     async function deleteMessages() {
-        while (document.getElementbyClassName("msg-thread__topcard-btn").length > 1) {
+        while (document.getElementsByClassName("msg-thread__topcard-btn").length > 1) {
             document.getElementsByClassName("msg-thread__topcard-btn")[1].click();
             await sleep(1000);
             document.getElementsByClassName("msg-topcard__full-width-action-button delete")[0].click();
@@ -12,5 +12,5 @@ javascript: (function () {
             await sleep(1000);
         }
     }
-    deleseMessages();
+    deleteMessages();
 }());
