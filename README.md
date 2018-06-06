@@ -16,12 +16,14 @@ __Delete all your tweets older than a certain number of hours:__ <a href="javasc
 
 <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-posts.js'); document.body.appendChild(jsCode);}());">Delete all your LinkedIn posts</a>
 
-* Works on:
+* Works on: https://www.linkedin.com/in/_username_/detail/recent-activity/
 
 <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-messages.js'); document.body.appendChild(jsCode);}());">Delete all your LinkedIn messages</a>
 
-* Works on:
+* Works on: https://linkedin.com/messaging/
 
 <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-connections.js'); document.body.appendChild(jsCode);}());">Delete all your LinkedIn connections</a>
 
-* Works on:
+* Works on: https://linkedin.com/search/results/people/?facetNetwork=["F"]
+
+(apply additional search filters as desired before using bookmarklet)
