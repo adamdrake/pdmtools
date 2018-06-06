@@ -2,9 +2,8 @@ javascript: (function () {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-
     async function removeConnections() {
-        for (var i = 0; i < 10; i++) {
+        while (document.getElementsByClassName("search-result__result-link").length > 0) {
             document.getElementsByClassName("search-result__result-link")[0].click();
             await sleep(4000);
             document.getElementsByClassName("pv-s-profile-actions__overflow-toggle")[0].click();
@@ -17,4 +16,5 @@ javascript: (function () {
             await sleep(2000);
         }
     }
+    removeConnections();
 }());

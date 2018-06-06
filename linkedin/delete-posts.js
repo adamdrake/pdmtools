@@ -2,7 +2,6 @@ javascript: (function () {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-
     async function removePosts() {
         while (document.getElementsByClassName("control-panel-trigger").length > 1) {
             document.getElementsByClassName("control-panel-trigger")[0].click();
