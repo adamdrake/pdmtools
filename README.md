@@ -4,7 +4,7 @@ Bookmarklets to help you manage your personal data on social media.
 
 ## Usage 
 
-Get the bookmarklets here: [url forthcoming]
+Get the bookmarklets here: [https://adamdrake.github.io/pdmtools/](https://adamdrake.github.io/pdmtools/)
 
 Drag the links to your bookmarks toolbar to "install," then navigate to the relevant page and click the bookmarklet to use it.
 
