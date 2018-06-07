@@ -10,7 +10,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --cyan: #76e1f4;
+    --cyan: #95d2e7;
     --red: #ff5c73;
     --blue: #5fa1f4;
     --green: #6dd8af;
@@ -109,6 +109,12 @@ hr {
 .content h2 {
     font-size: 2rem;
     font-weight: 600
+}
+
+.content img {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    display: block
 }
 
 .cards {
