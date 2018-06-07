@@ -1,0 +1,150 @@
+/* Page styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --cyan: #76e1f4;
+    --red: #ff5c73;
+    --blue: #5fa1f4;
+    --green: #6dd8af;
+    --yellow: #ffe159
+}
+
+html {
+    background-color: var(--green);
+    font-size: 16px
+}
+
+body {
+    font-family: monospace, sans-serif;
+    line-height: 1.5;
+    color: var(--black)
+}
+
+@media all and (min-width: 768px) {
+    body {
+        font-size: 18px
+    }
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    font-family: monospace, sans-serif;
+    line-height: 1.2
+}
+
+a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease 0.5s
+}
+
+a:hover {
+    color: var(--black);
+}
+
+a:active {
+    color: var(--blue)
+}
+
+ul li {
+    list-style: disc inside;
+    margin-left: 2.5rem;
+    line-height: 1.2
+}
+
+hr {
+    content: '';
+    height: 3px;
+    width: 50%;
+    color: var(--black);
+    background-color: var(--black);
+    margin-bottom:1.5em
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 50px 30px 50px 30px;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: var(--white);
+    border-left: 3px solid var(--black);
+    border-right: 6px solid var(--black)
+}
+
+/* Specific elements */
+
+.title h1 {
+    font-size: 2rem;
+    line-height: 0.8;
+    font-weight: 600;
+}
+
+@media all and (min-width: 768px) {
+    .title h1 {
+        font-size: 5rem
+    }
+}
+
+.content {
+    margin: 15px 0
+}
+
+.content p {
+    margin-bottom: 1rem
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 600
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    background-color: var(--white);
+    border: solid var(--black);
+    border-width: 3px 6px 3px 3px
+}
+
+.bookmarklet-link a {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 46px;
+    color: var(--black);
+    background-color: var(--cyan);
+    padding: 5px 20px
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 50px auto
+}
