@@ -15,16 +15,16 @@
 
     <meta property="og:title" content="Personal Data Management Tools">
     <meta property="og:description" content="Bookmarklets to help you manage your personal data on social media.">
-    <meta property="og:image" content="/static/img/bookmarklet-card.png">
+    <meta property="og:image" content="https://adamdrake.github.io/pdmtools/static/img/bookmarklet-card.png">
 
-    <meta name="twitter:image" content="/static/img/bookmarklet-card.png">
+    <meta name="twitter:image" content="https://adamdrake.github.io/pdmtools/static/img/bookmarklet-card.png">
     <meta name="twitter:card" content="summary_large_image">
 
     <title>Personal Data Management Tools</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://adamdrake.github.io/pdmtools/static/css/style.css">
     <!-- Icon -->
-    <link rel="shortcut icon" href="/static/img/favbookmark.ico" id="favicon">
+    <link rel="shortcut icon" href="https://adamdrake.github.io/pdmtools/static/img/favbookmark.ico" id="favicon">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         </div>
         <hr>
         <div class="content">
-            <img src="/static/img/bookmarklet.png" width="250px">
+            <img src="https://adamdrake.github.io/pdmtools/static/img/bookmarklet.png" width="250px">
             <p>Hello!</p>
             <p>We're open source
                 <a href="https://github.com/adamdrake/pdmtools">on GitHub</a> (or just "View Source" this page!)</p>
@@ -59,7 +59,7 @@
 
             <div class="card">
                 <span class="bookmarklet-link">
-                    <img src="/static/img/bookmark-icon.png" width="25px">
+                    <img src="https://adamdrake.github.io/pdmtools/static/img/bookmark-icon.png" width="25px">
                     <a href="javascript: (function () {function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));};var now = new Date;var rawTweets = document.querySelectorAll('div.js-original-tweet div.content');tweets = Array.from(rawTweets).map(t => ({time: t.querySelector('div.stream-item-header small a span.js-short-timestamp').getAttribute('data-time-ms'),delete: t.querySelector('div.stream-item-header div.js-more-ProfileTweet-actions div.dropdown div.dropdown-menu ul li.js-actionDelete'),unretweet: t.querySelector('div.stream-item-footer div.js-actions div.ProfileTweet-action--retweet button.js-actionRetweet')}));async function removeTweets(max) {for (let i = 0; i < tweets.length; i++) {let stamp = new Date(parseInt(tweets[i].time));let diff = ((now - stamp) / 1000) / 3600;if (diff > max) {if (tweets[i].delete != null) {tweets[i].delete.click();await sleep(1000);document.getElementsByClassName('delete-action')[0].click();await sleep(1000);}else if (tweets[i].delete == null) {tweets[i].unretweet.click();await sleep(1000);}}}}removeTweets(prompt('Delete tweets older than __ hours:', '24'))}());">
                         Delete all your tweets older than a certain number of hours
                     </a>
@@ -83,7 +83,7 @@
 
             <div class="card">
                 <span class="bookmarklet-link">
-                    <img src="/static/img/bookmark-icon.png" width="25px">
+                    <img src="https://adamdrake.github.io/pdmtools/static/img/bookmark-icon.png" width="25px">
                     <a href="javascript: (function () {function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}async function removePosts() {while (document.getElementsByClassName('control-panel-trigger').length > 0) {document.getElementsByClassName('control-panel-trigger')[0].click();await sleep(1000);document.getElementsByClassName('option-button__delete')[0].click();await sleep(1000);document.getElementsByClassName('feed-shared-decision-modal__confirm-button')[0].click();await sleep(2000);window.scrollBy(0, 20);}}removePosts();}());
                             ">
                         Delete all your LinkedIn posts
@@ -99,7 +99,7 @@
 
             <div class="card">
                 <span class="bookmarklet-link">
-                    <img src="/static/img/bookmark-icon.png" width="25px">
+                    <img src="https://adamdrake.github.io/pdmtools/static/img/bookmark-icon.png" width="25px">
                     <a href="javascript: (function () {function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}async function deleteMessages() {while (document.getElementsByClassName('msg-thread__topcard-btn').length > 1) {document.getElementsByClassName('msg-thread__topcard-btn')[1].click();await sleep(1000);document.getElementsByClassName('msg-topcard__full-width-action-button delete')[0].click();await sleep(1000);document.getElementsByClassName('msg-modal__button confirm-delete-btn')[0].click();await sleep(1000);}}deleteMessages();}());">
                         Delete all your LinkedIn messages
                     </a>
@@ -113,7 +113,7 @@
 
             <div class="card">
                 <span class="bookmarklet-link">
-                    <img src="/static/img/bookmark-icon.png" width="25px">
+                    <img src="https://adamdrake.github.io/pdmtools/static/img/bookmark-icon.png" width="25px">
                     <a href="javascript: (function () {function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}async function removeConnections() {while (document.getElementsByClassName('search-result__result-link').length > 0) {document.getElementsByClassName('search-result__result-link')[0].click();await sleep(4000);document.getElementsByClassName('pv-s-profile-actions__overflow-toggle')[0].click();await sleep(1500);document.getElementsByClassName('pv-s-profile-actions--disconnect')[0].click();await sleep(1000);document.getElementsByClassName('pv-s-profile-actions--unfollow')[0].click();await sleep(1000);window.history.back();await sleep(2000);}}removeConnections();}());">
                         Delete all your LinkedIn connections
                     </a>
