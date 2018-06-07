@@ -4,28 +4,55 @@ Bookmarklets to help you manage your personal data on social media.
 
 ## Usage 
 
+Get the bookmarklets here: [url forthcoming]
+
 Drag the links to your bookmarks toolbar to "install," then navigate to the relevant page and click the bookmarklet to use it.
 
 You must be logged in to your account. The bookmarklets do not collect any data, only help to click buttons in your browser. They will delete your data in the same way that you would with manual clicking. The data will not be backed up or recoverable via the bookmarklet. 
 
-## Twitter
+## Available bookmarklets
 
-<html><a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/twitter/delete-tweets.js'); document.body.appendChild(jsCode);}());"><strong>Delete all your tweets older than a certain number of hours</strong></a></html> (the ephemeral bookmarklet)
+### Twitter
 
-* Works on your Twitter profile page: https://twitter.com/_username_
-* A pop-up prompt will ask you to input the hours, e.g. "24"
+* Delete all your tweets older than a certain number of hours
 
-## LinkedIn
+### LinkedIn
 
-<html><a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-posts.js'); document.body.appendChild(jsCode);}());"><strong>Delete all your LinkedIn posts</strong></a></html>
+* Delete all your LinkedIn posts
+* Delete all your LinkedIn messages (your copy only)
+* Delete all your LinkedIn connections
 
-* Works on: https://www.linkedin.com/in/_username_/detail/recent-activity/
+## In-progress bookmarklets
 
-<html><a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-messages.js'); document.body.appendChild(jsCode);}());"><strong>Delete all your LinkedIn messages</strong></a></html>
+### Twitter
 
-* Works on: https://linkedin.com/messaging/
+* Unlike all your liked posts
+* Delete all your DMs (your copy only)
 
-<html><a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://raw.githubusercontent.com/adamdrake/pdmtools/master/linkedin/delete-connections.js'); document.body.appendChild(jsCode);}());"><strong>Delete all your LinkedIn connections</strong></a></html>
+## Contributions
 
-* Works on: https://linkedin.com/search/results/people/?facetNetwork=["F"]
-* You can apply additional search filters as desired before using bookmarklet
+Contributions of new bookmarklets for any social media site are welcome, as are fixes for existing bookmarklets.
+
+Please include in your PR the URL of the page your script is designed to work on.
+
+## Issues
+
+Bookmarklets are usually dependent on the position and naming of DOM elements, so an update to a social media's website may break them. It will then be necessary to update the bookmarklet script with the new DOM elements.
+
+If you are logged in to your account and on the correct page and the bookmarklet does not work, please submit an issue.
+
+# License
+Copyright (C) 2018
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
