@@ -2,7 +2,7 @@
 
 Bookmarklets to help you manage your personal data on social media.
 
-## Usage 
+## Usage
 
 Get the bookmarklets here: [https://adamdrake.github.io/pdmtools/](https://adamdrake.github.io/pdmtools/)
 
@@ -15,6 +15,7 @@ You must be logged in to your account. The bookmarklets do not collect any data,
 ### Twitter
 
 * Delete all your tweets older than a certain number of hours
+* Remove/uncheck all of your [Interests from Twitter](https://mobile.twitter.com/settings/your_twitter_data/twitter_interests)
 
 ### LinkedIn
 

@@ -74,6 +74,32 @@
                     </li>
                 </ul>
             </div>
+            <div class="card">
+                <span class="bookmarklet-link">
+                    <img src="https://adamdrake.github.io/pdmtools/static/img/bookmark-icon.png" width="25px">
+                    <a href="javascript: (function () {
+                        function sleep(ms) {
+                            return new Promise(resolve => setTimeout(resolve, ms));
+                        };
+                        async function uncheckAll() {
+                            var inputs = document.querySelectorAll("input[type=checkbox]");
+                            for (var i = 0; i < inputs.length; i++) {
+                                if (inputs[i].checked == true) {
+                                    inputs[i].click();
+                                    await sleep(1000);
+                                }
+                            }
+                        }
+                    }());">
+                    Uncheck all of your "Interests from Twitter"
+                </a>
+                </span>
+                <ul>
+                    <li>
+                        This works on the <a href="https://mobile.twitter.com/settings/your_twitter_data/twitter_interests">Interests from Twitter section</a> of the Interests and Ads area of your Twitter settings.
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="content">
